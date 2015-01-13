@@ -82,6 +82,7 @@
 }
 
 .my-butt {
+    width: 110px;
     display: block;
     margin-top: 1em;
     margin-left: auto;
@@ -124,6 +125,7 @@
 
 body {
     padding-top: 70px;
+    position: relative;
 }
 
 #section-5-pics {
@@ -151,4 +153,55 @@ body {
     width: auto;
     height: 640px;
     max-height: 640px;
+}
+
+.gallery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-height: 720px;
+    max-width: 920px;
+}
+
+.quad-2 {
+    max-height: 480px;
+    max-width: 720px;
+}
+
+.quad-1 {
+    padding: 0px;
+    margin: 0px;
+    max-height: 480px;
+    max-width: 240px;
+}
+
+.quad-3-4 {
+    max-height: 240px;
+    max-width: 960px;
+}
+
+.gallery-pics {
+    padding: 0px;
+    margin: 0px;
+}
+
+.section-5 {
+    margin-top: 3em;
+}
+
+.gallery-wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-cap {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo img{
+    width: 50px;
 }
