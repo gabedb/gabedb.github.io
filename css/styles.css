@@ -147,7 +147,8 @@ body {
     margin-top: 3em;
 }
 
-.gallery img{
-    width: 100%;
-    height: auto;
+#carousel-example-generic img{
+    width: auto;
+    height: 640px;
+    max-height: 640px;
 }
