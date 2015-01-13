@@ -1,0 +1,153 @@
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.CTA {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.marketing {
+    margin-top: 3em;
+}
+
+.featurette {
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.cta-field {
+    padding-top: 3em;
+}
+
+.my-navbar {
+    height: 5em;
+}
+
+.navbar-content {
+    /*position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+
+.featurette-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 480px;
+    min-width: 360px;
+    height: auto;
+}
+
+#cta-button {
+    border: 1px solid #ddd;
+    border-radius: 14px;
+}
+
+.quotes {
+    margin-top: 8%;
+}
+
+.description {
+    margin-top: 6%;
+}
+
+.marketing-pics {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-butt {
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-4 {
+    margin-top: 3em;
+}
+
+.staff-pics:hover {
+    opacity: 0.8;
+    cursor: pointer; 
+    cursor: hand;
+}
+
+#circles{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    border-radius: 150px;
+    margin: 150px;
+}
+.div2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    border-radius: 220px;
+}
+
+.div2:hover {
+    opacity: 0.8;
+    cursor: pointer; 
+    cursor: hand;
+}
+
+body {
+    padding-top: 70px;
+}
+
+#section-5-pics {
+    width: 100%;
+    display: block;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-3 {
+    border: 1px solid #ddd;
+    margin-top: 3em;
+}
+
+.marketing-pics + h2{
+    text-align: center;
+}
+
+.section-6 {
+    margin-top: 3em;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
