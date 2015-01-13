@@ -12,6 +12,12 @@
 
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript">
+            $('body').scrollspy({
+                offset: 80;
+            });
+        </script>
+        
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -19,7 +25,7 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar-default">
     
         <div class="visible-lg">
             <p class="text-center btn-danger">
@@ -55,14 +61,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="assets/img/logo.svg"></a>
+                    <a class="navbar-brand logo" href="#"><img src="asses/img/logo.png"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">This is an example</a></li>
-                        <li><a href="#">This is an example</a></li>
+                    <ul class="nav navbar-nav nav-tabs" role="tablist">
+                        <li><a href="#section-2">Services</a></li>
+                        <li><a href="#section-3">Tesimonials</a></li>
+                        <li><a href="#section-4">Crew</a></li>
+                        <li><a href="#section-5">Gallery</a></li>
+                        <li><a href="#section-6">Partners</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <button type="button" class="btn btn-primary navbar-btn">Drop me a line!</button>
@@ -82,21 +91,24 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="assets/img/slide%202.jpg" alt="slide2">
-                    <div class="carousel-caption">
-                      ...
+                    <img src="asses/img/slide%202.jpg" alt="slide2">
+                    <div class="carousel-caption my-cap">
+                        <h1>This is a caption</h1>
+                        <p>We saw</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="assets/img/slide%202.jpg" alt="slide2">
-                    <div class="carousel-caption">
-                      ...
+                    <img src="asses/img/slide%202.jpg" alt="slide2">
+                    <div class="carousel-caption my-cap">
+                        <h1>This is a caption</h1>
+                        <p>We conquered</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="assets/img/slide%201.jpg" alt="slide1">
-                    <div class="carousel-caption">
-                      ...
+                    <img src="asses/img/slide%202.jpg" alt="slide2">
+                    <div class="carousel-caption my-cap">
+                        <h1>This is a caption</h1>
+                        <p>We came</p>
                     </div>
                 </div>
             </div>
@@ -114,7 +126,7 @@
 
 
         <!-- Three columns of text below the carousel -->
-        <div class="container marketing">
+        <div id="section-2" class="container marketing">
             <div class="row">
                 <div class="col-sm-4">
                     <img class="img-circle marketing-pics" src="http://placehold.it/140x140" alt="Generic placeholder image">
@@ -136,10 +148,10 @@
 
 
 
-        <div class="container-fluid section-3">
+        <div id="section-3" class="container-fluid section-3">
             <div class="row featurette">
                 <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
-                    <img class="img-responsive featurette-image" src="assets/img/Billy.jpg" alt="Generic placeholder image">
+                    <img class="img-responsive featurette-image" src="asses/img/Billy.jpg" alt="Generic placeholder image">
                 </div>
                 <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-2 col-md-5 col-md-offset-0 col-lg-5 col-lg-offset-0">
                     <div class="row">
@@ -158,7 +170,7 @@
         </div>
 
 
-        <div class="container section-4">
+        <div id="section-4" class="container section-4">
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-2 col-lg-3 col-lg-offset-3 section-4-content">
                     <div class="row section-heading">
@@ -193,15 +205,30 @@
             </div>
         </div>
 
-        <div class="container-fluid section-5">
-            <div class="row">
+        <div id="section-5" class="container-fluid section-5">
+            <div class="row gallery-wrapper">
                 <div class="col-lg-12 gallery">
-                    <img src="assets/img/gallery-10.png" alt="gallery">
+                    <div class="row">
+                        <div class="col-xs-9 quad-2">
+                            <div class="row">
+                                <div class="col-xs-4 gallery-pics"><img class="img-responsive" src="http://placehold.it/240x240" alt="Generic placeholder image"></div>
+                                <div class="col-xs-8 gallery-pics"><img class="img-responsive" src="http://placehold.it/480x240" alt="Generic placeholder image"></div>
+                                <div class="col-xs-8 gallery-pics"><img class="img-responsive" src="http://placehold.it/480x240" alt="Generic placeholder image"></div>
+                                <div class="col-xs-4 gallery-pics"><h3>This is text</h3></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 quad-1"><img class="img-responsive gallery-pics" src="http://placehold.it/240x480" alt="Generic placeholder image"></div>
+                    </div>
+                    <div class="row quad-3-4">
+                        <div class="col-xs-3 gallery-pics"><img class="img-responsive gallery-pics" src="http://placehold.it/240x240" alt="Generic placeholder image"></div>
+                        <div class="col-xs-3 gallery-pics"><img class="img-responsive gallery-pics" src="http://placehold.it/240x240" alt="Generic placeholder image"></div>
+                        <div class="col-xs-6 gallery-pics"><img class="img-responsive gallery-pics" src="http://placehold.it/480x240" alt="Generic placeholder image"></div>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <div class="container section-6">
+        <div id="section-6" class="container section-6">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1">
                     <div id="circles"></div>

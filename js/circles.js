@@ -1,3 +1,11 @@
+/*var offset = 80;
+
+$('.navbar li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+});
+*/
 $( document ).ready(function() {
     var div = 360 / 6;
     var radius = 150;
