@@ -1,11 +1,31 @@
-/*var offset = 80;
+var offset = 70;
 
-$('.navbar li a').click(function(event) {
-    event.preventDefault();
-    $($(this).attr('href'))[0].scrollIntoView();
-    scrollBy(0, -offset);
+//$('.navbar li a').click(function(event) {
+//    event.preventDefault();
+//    $($(this).attr('href'))[0].scrollIntoView();
+//    scrollBy(0, -offset);
+//});
+
+$(".navbar ul li a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 500, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
 });
-*/
+
 $( document ).ready(function() {
     var div = 360 / 6;
     var radius = 150;
