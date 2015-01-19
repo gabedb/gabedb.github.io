@@ -43,5 +43,6 @@ $( document ).ready(function() {
     childdiv.style.top = (y + totalOffset).toString() + "px";
     childdiv.style.left = (x + totalOffset).toString() + "px";
     parentdiv.appendChild(childdiv);
+    $(childdiv).prepend('<img class="partner-img" src="../asses/img/logo.svg">');
     }
 });
