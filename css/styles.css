@@ -1,5 +1,41 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url(../asses/fonts/Gotham-Medium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Gotham';
+    font-weight: bold;
+    src: url(../asses/fonts/Gotham-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Gotham';
+    font-weight: lighter;
+    src: url(../asses/fonts/Gotham-Light.otf) format("opentype");
+}
+
 .carousel-inner > .item > img {
     margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Gotham;   
+}
+
+p{
+    font-family: Gotham;
+    font-weight: lighter;
+}
+
+a{
+    font-family: Gotham;
+    font-weight: lighter;
+}
+
+button{
+    font-family: Gotham;
+    font-weight: lighter;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -214,10 +250,11 @@ body {
 
 
 .my-cap {
+    width: 50%;
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
 }
 .logo img{
     width: 50px;
@@ -498,6 +535,11 @@ span.glyphicon-info-sign:hover{
 .white, .white a {
     color: #fff;
 }
+
+.green{
+    background-color: #45BF55;
+}
+
 .gallery-1 {
     width: 74%;
 }
@@ -591,3 +633,9 @@ span.glyphicon-info-sign:hover{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.my-cap h1{
+/*    font-size: 30px;*/
+    font-size: 4.0vw;
+}
+
+
