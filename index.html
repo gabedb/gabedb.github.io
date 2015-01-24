@@ -6,12 +6,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Pixel</title>
         
+        <link href="css/animate.min.css" rel="stylesheet">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
 
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -120,17 +153,17 @@
         <!-- Three columns of text below the carousel -->
         <div id="section-2" class="container marketing">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <img class="img-circle marketing-pics" src="http://placehold.it/140x140" alt="Generic placeholder image">
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                 </div><!-- /.col-sm-4 -->
-                <div class="col-sm-4">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <img class="img-circle marketing-pics" src="http://placehold.it/140x140" alt="Generic placeholder image">
                     <h2>Heading</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 </div><!-- /.col-sm-4 -->
-                <div class="col-sm-4">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <img class="img-circle marketing-pics" src="http://placehold.it/140x140" alt="Generic placeholder image">
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -178,7 +211,7 @@
                         <div class="col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
                             <h5 class="top-caption">Mike, the man</h5>
                             <div class="overlay">
-                                <img class="img-circle staff-pics hvr-wobble-skew" src="asses/img/profile%201.png" alt="ogmike">
+                                <img class="img-circle staff-pics" src="asses/img/profile%201.png" alt="ogmike">
 <!--                                <span class="social-media">this is a test</span>-->
                             </div>
                             <img class="img-circle staff-pics hvr-wobble-skew bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike">
@@ -208,12 +241,12 @@
                 </div>
                 <div class="hidden-xs visible-sm hidden-md hidden-lg col-xs-7 col-xs-offset-0 col-sm-5 col-sm-offset-0">
                     <div class="row">
-                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics hvr-wobble-skew bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
-                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics hvr-wobble-skew bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
-                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics hvr-wobble-skew bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
-                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics hvr-wobble-skew bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
-                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics hvr-wobble-skew bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
-                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics hvr-wobble-skew bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
+                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics animated bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
+                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
+                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
+                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
+                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
+                        <div class="col-xs-6 col-xs-offset-0"><img class="img-circle staff-pics bot-staff-pic" src="asses/img/profile%201.png" alt="ogmike"></div>
                     </div>
                 </div>
             </div>
@@ -280,7 +313,7 @@
         
         <div id="section-6" class="container section-6">
             <div class="row">
-                <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 circle-cont">
+                <div class="hidden-xs col-sm-5 col-sm-offset-0 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 circle-cont">
 <!--                    <div id="circles"></div>-->
                     <div id="big-circle" class="circle big">
                         <div class="circle one"><img src="asses/img/logo.svg"></div>
@@ -291,7 +324,7 @@
                         <div class="circle six"></div>
                     </div>
                 </div>
-                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
                     <div class="row">
                         <div class="col-lg-12 partners-text">
                             <h4>Example heading</h4>
