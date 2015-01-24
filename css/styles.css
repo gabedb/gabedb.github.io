@@ -144,7 +144,9 @@ button{
 #circles{
     position: relative;
     width: 150px;
+    max-width: 150px;
     height: 150px;
+    max-height: 150px;
     background-color: #eee;
     border: 1px solid #aaa;
     border-radius: 150px;
@@ -254,6 +256,9 @@ body {
 
 .section-5 {
     margin-top: 3em;
+    max-width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 
@@ -519,12 +524,13 @@ body {
 
 .info-img-2 span{
     position: absolute;
-    top: 83%;
+    top: 80%;
     left: 80%;
 }
 
 span.glyphicon-info-sign{
-    font-size: 3.2em;
+/*    font-size: 3.2em;*/
+    font-size: 3.8vw;
 }
 
 span.glyphicon-info-sign:hover{
@@ -647,4 +653,163 @@ span.glyphicon-info-sign:hover{
     font-size: 4.0vw;
 }
 
+.circle {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    display: inline-block;
+    position: absolute;
+}
 
+.circle img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle.big {
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    margin: 100px;
+}
+
+.one {
+    left: -80%;
+    top: -40%;
+}
+
+.one:hover{
+    opacity: 0.8;
+    cursor: pointer; 
+    cursor: hand;
+}
+
+.two {
+    top: -90%;
+    left: 10%;
+}
+
+.three {
+    right: -80%;
+    top: -40%;
+}
+
+
+.four {
+    left: -80%;
+    bottom: -40%;
+}
+
+.five {
+    bottom: -90%;
+    left: 10%;
+}
+
+.six {
+    right: -80%;
+    bottom: -40%;
+}
+
+/* In case I need it */
+
+@media(max-width:767px){
+    .circle{
+        width: 110px;
+        height: 110px;
+    }
+    .circle.big{
+        width: 130px;
+        height: 130px;
+    }
+    .one {
+        left: -80%;
+        top: -40%;
+    }
+    
+    .two {
+        top: -90%;
+        left: 10%;
+    }
+    
+    .three {
+        right: -80%;
+        top: -40%;
+    }
+    
+    
+    .four {
+        left: -80%;
+        bottom: -40%;
+    }
+    
+    .five {
+        bottom: -90%;
+        left: 10%;
+    }
+    
+    .six {
+        right: -80%;
+        bottom: -40%;
+    }
+    /*#circles{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin: 100px;
+    }
+    .div2 {
+        width: 66px;
+        height: 66px;
+        border-radius: 115px;
+    }*/
+
+    .featurette-image {
+        width: 360px;
+        min-width: 240px;
+        height: auto;
+    }
+}
+@media(min-width:768px){
+    #circles{
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+        margin: 120px;
+    }
+    .div2 {
+        width: 80px;
+        height: 80px;
+        border-radius: 280px;
+    }
+}
+@media(min-width:992px){
+    #circles{
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        margin: 150px;
+    }
+    .div2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 220px;
+    }
+}
+@media(min-width:1200px){}
+
+
+
+
+
+.circle-cont {
+    min-height: 360px;
+}
+
+.partners-text {
+    text-align: center;
+}
