@@ -72,29 +72,49 @@ $(".navbar ul li a[href^='#']").on('click', function(e) {
 
 });
 
+//$('#carousel-example-generic').carousel({
+//  interval: 4000
+//})
+//
+//$('.carousel .item').each(function(){
+//  var next = $(this).next();
+//  if (!next.length) {
+//    next = $(this).siblings(':first');
+//  }
+//  next.children(':first-child').clone().appendTo($(this));
+//  
+//  for (var i=0;i<1;i++) {
+//    next=next.next();
+//    if (!next.length) {
+//    	next = $(this).siblings(':first');
+//  	}
+//    
+//    next.children(':first-child').clone().appendTo($(this));
+//  }
+//});
+
 $( document ).ready(function() {
-//    get_viewport_width();
-    var radius=150;
-//    if(viewport == 0){radius = 120;}
-//    else if(viewport == 1){radius = 130;}
-//    else if(viewport == 2){radius = 150;}
-//    else{radius = 150;}
-    
-    var div = 360 / 6;
-    var parentdiv = document.getElementById('circles');
-    var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2);  //assumes parent is square
-    var offsetToChildCenter = 50;
-    var totalOffset = offsetToParentCenter - offsetToChildCenter;
-    for (var i = 1; i <= 6; ++i)
-    {
-        var childdiv = document.createElement('div');
-        childdiv.className = 'div2';
-        childdiv.style.position = 'absolute';
-        var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
-        var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
-        childdiv.style.top = (y + totalOffset).toString() + "px";
-        childdiv.style.left = (x + totalOffset).toString() + "px";
-        parentdiv.appendChild(childdiv);
-        $(childdiv).prepend('<img class="partner-img" src="../asses/img/logo.svg">');
-    }
+////    get_viewport_width();
+//    var radius=150;
+////    if(viewport == 0){radius = 120;}
+////    else if(viewport == 1){radius = 130;}
+////    else if(viewport == 2){radius = 150;}
+////    else{radius = 150;}
+//    
+//    var div = 360 / 6;
+//    var parentdiv = document.getElementById('circles');
+//    var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2);  //assumes parent is square
+//    var offsetToChildCenter = 50;
+//    var totalOffset = offsetToParentCenter - offsetToChildCenter;
+//    for (var i = 1; i <= 6; ++i)
+//    {
+//        var childdiv = document.createElement('div');
+//        childdiv.className = 'div2';
+//        childdiv.style.position = 'absolute';
+//        var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
+//        var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
+//        childdiv.style.top = (y + totalOffset).toString() + "px";
+//        childdiv.style.left = (x + totalOffset).toString() + "px";
+//        parentdiv.appendChild(childdiv);
+//        $(childdiv).prepend('<img class="partner-img" src="../asses/img/logo.svg">');
 });
