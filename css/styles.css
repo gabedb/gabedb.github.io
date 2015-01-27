@@ -79,7 +79,7 @@ button{
 }
 
 .landing-button{
-    margin-top: 10em;
+    margin-top: 12vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1042,5 +1042,5 @@ a.expand {
 }
 
 .landing-text {
-    padding-top: 4em;
+    padding-top: 24vh;
 }
