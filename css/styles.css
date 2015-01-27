@@ -79,7 +79,7 @@ button{
 }
 
 .landing-button{
-    margin-top: 2em;
+    margin-top: 10em;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1036,7 +1036,7 @@ a.expand {
 
 .landing-page {
     color: #fff;
-    height: 720px;
+    height: 84vh;
     background-image: url(../asses/img/slide%202.jpg);
     background-size: cover;
 }
