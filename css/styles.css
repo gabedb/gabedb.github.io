@@ -149,6 +149,7 @@ button{
 
 .quotes {
     margin-top: 8%;
+    max-height: 20vh;
 }
 
 .description {
@@ -162,11 +163,10 @@ button{
 }
 
 .my-butt {
-    width: 100px;
-    display: block;
+    padding: 8px 0;
+    text-align: center;
+    width: 95px;
     margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .section-4 {
@@ -254,9 +254,6 @@ body {
     bottom: 0; 
 }
 
-.gallery {
-}
-
 .quad-2 {
 /*
     max-height: 480px;
@@ -303,8 +300,6 @@ body {
     padding-left: 1em;
     padding-right: 1em;
 }
-
-
 
 .my-cap {
     width: 50%;
@@ -381,8 +376,7 @@ body {
 
 
 .sq-pic {
-    max-height: 360px;
-    max-width: 360px;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -394,7 +388,9 @@ body {
     padding: 0;
 }
 
-
+.col-xs-6 .sq-pic{
+    margin-bottom: 30px;
+}
 
 .staff-pics {
     max-height: 140px;
@@ -680,10 +676,6 @@ span.glyphicon-info-sign:hover{
     width: 74%;
 }
 
-
-.gallery-wrapper {
-}
-
 .section-5 img{
     padding: 4px;
     margin: 0;
@@ -845,7 +837,7 @@ span.glyphicon-info-sign:hover{
         padding-top: 40px;
     }
     .section-6 {
-        margin-top: 3em;
+        margin-top: 0em;
     }
 
     .featurette-image {
@@ -855,7 +847,7 @@ span.glyphicon-info-sign:hover{
     }
 }
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
+@media (min-width:768px) {
     .circle {
         width: 125px;
         height: 125px;
@@ -901,18 +893,56 @@ span.glyphicon-info-sign:hover{
         height: 80px;
         border-radius: 280px;
     }
+    .my-butt{
+        width: 12vw;    
+    }
 }
 @media(min-width:992px){
-    #circles{
+    .circle.big {
         width: 150px;
         height: 150px;
-        border-radius: 150px;
-        margin: 150px;
+        margin: 100px;
     }
+    
+    .one {
+        left: -100%;
+        top: -60%;
+    }
+
+    .two {
+        top: -120%;
+        left: 10%;
+    }
+    
+    .three {
+        right: -100%;
+        top: -60%;
+    }
+    
+    
+    .four {
+        left: -100%;
+        bottom: -60%;
+    }
+    
+    .five {
+        bottom: -120%;
+        left: 10%;
+    }
+    
+    .six {
+        right: -100%;
+        bottom: -60%;
+    }
+
     .div2 {
         width: 100px;
         height: 100px;
         border-radius: 220px;
+    }
+    
+    .my-butt{
+        width: 95px;
     }
 /*
     .gallery-pics h3{
@@ -1043,4 +1073,17 @@ a.expand {
 
 .landing-text {
     padding-top: 24vh;
+}
+
+.ignore {
+    width: 0;
+    height: 0;
+}
+
+
+
+
+
+.mobile-gallery {
+    margin-top: 3em;
 }
