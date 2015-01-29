@@ -18,4 +18,18 @@ $(".navbar ul li a[href^='#']").on('click', function(e) {
 
 });
 
+$( window ).resize(function(){
+    var cw = $('.sq-pic').width();
+    $('.sq-pic').css({
+        'height': cw + 'px'
+    });
+});
+
 $('.ignore').css({'visibility':'hidden', 'width':'0%'});
+
+$( document ).ready( function(){
+    var cw = $('.sq-pic').width();
+    $('.sq-pic').css({
+        'height': cw + 'px'
+    });
+});
