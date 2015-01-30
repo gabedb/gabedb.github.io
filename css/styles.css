@@ -63,6 +63,7 @@ a{
 button{
     font-family: Gotham;
     font-weight: 100;
+    transition: all 0.5s ease 0s;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -1080,10 +1081,92 @@ a.expand {
     height: 0;
 }
 
+.glyphicon.glyphicon-envelope {
+    font-size: 25px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 140px;
+	height: 140px;
+    border-radius: 50%;
+}
+
+/* entire container, keeps perspective */
+.flip-container-bot {
+	perspective: 1000;
+    margin-top: 1em;
+    margin-left: 8.8vw;
+}
+
+/* flip the pane when hovered */
+.flip-container-bot:hover .flipper, .flip-container-bot.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container-bot, .front, .back {
+	width: 140px;
+	height: 140px;
+    border-radius: 50%;
+}
 
 
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
 
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+    background-color: #E74C3C ;
+}
+
+.button-container{
+    margin-top: 50px;
+}
+
+.button-container button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .mobile-gallery {
     margin-top: 3em;
+}
+.link-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #ccc;
+    background-color: #fff;
 }
