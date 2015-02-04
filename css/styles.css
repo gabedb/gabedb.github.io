@@ -30,6 +30,9 @@
     margin: 0 auto;
 }
 
+.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
 
 #carousel-example-generic img{
     width: 65%;
@@ -158,6 +161,9 @@ button{
 }
 
 .marketing-pics {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -288,7 +294,6 @@ body {
 
 .gallery-pics h3{
     font-size: 1.9vw;
-    position: absolute;
 }
 
 .gallery-pics p{
@@ -315,6 +320,7 @@ body {
     width: 50px;
 }
 
+/*
 .gallery-pics .overbox {
     height: 100%;
     width: 100%;
@@ -332,8 +338,10 @@ body {
     opacity: 0;
     padding: 25% 25%;
 }
+*/
 
 /*.gallery-pics:hover .overbox { opacity: 1; }*/
+/*
 .gallery-pics .overtext {
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
@@ -343,7 +351,9 @@ body {
   transform: translateY(40px);
   -webkit-transform: translateY(40px);
 }
+*/
 
+/*
 .gallery-pics .title {
     font-size: 2.5em;
     text-align: center; 
@@ -374,6 +384,7 @@ body {
   transform: translateX(0px);
   -webkit-transform: translateX(0px);
 }
+*/
 
 
 .sq-pic {
@@ -405,9 +416,11 @@ body {
 
 
 .bot-staff-pic {
+/*
     margin-top: 1em;
-/*    margin-left: 9em;*/
+    margin-left: 9em;
     margin-left: 8.8vw;
+*/
 }
 
 .bot-caption {
@@ -719,7 +732,9 @@ span.glyphicon-info-sign:hover{
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 10px;
+    padding-top: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
     color: white;
 
     -webkit-transform: translateY(100%);
@@ -1113,7 +1128,7 @@ a.expand {
 	transform: rotateY(180deg);
 }
 
-.flip-container-bot, .front, .back {
+.flip-container-bot{
 	width: 140px;
 	height: 140px;
     border-radius: 50%;
@@ -1169,4 +1184,15 @@ a.expand {
     border-radius: 50%;
     color: #ccc;
     background-color: #fff;
+}
+
+.animated-block {
+    opacity: 0;
+    -webkit-transition: all 0.55s linear;
+    -moz-transition: all 0.55s linear;
+    transition: all 0.55s linear;
+}
+
+.animateblock.animated {
+    opacity: 1;
 }
