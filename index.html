@@ -7,47 +7,13 @@
         <title>Pixel</title>
         
         <link rel="shortcut icon" href="asses/img/favicon.ico"/>
-        <link href="css/animate.min.css" rel="stylesheet">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
 
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script>
-            $(document).ready(function(){
-                if (Modernizr.touch) {
-                    // show the close overlay button
-                    $(".close-overlay").removeClass("hidden");
-                    // handle the adding of hover class when clicked
-                    $(".overlay").click(function(e){
-                        if (!$(this).hasClass("hover")) {
-                            $(this).addClass("hover");
-                        }
-                    });
-                    // handle the closing of the overlay
-                    $(".close-overlay").click(function(e){
-                        e.preventDefault();
-                        e.stopPropagation();
-                        if ($(this).closest(".overlay").hasClass("hover")) {
-                            $(this).closest(".overlay").removeClass("hover");
-                        }
-                    });
-                } else {
-                    // handle the mouseenter functionality
-                    $(".overlay").mouseenter(function(){
-                        $(this).addClass("hover");
-                    })
-                    // handle the mouseleave functionality
-                    .mouseleave(function(){
-                        $(this).removeClass("hover");
-                    });
-                }
-            });
-        </script>
 
-        
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -228,7 +194,7 @@
                     </div>
                 </div>
                 <div class="col-xs-10 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
-                    <img class="img-responsive featurette-image" src="asses/img/Billy.jpg" alt="Generic placeholder image">
+                    <img  class="img-responsive featurette-image" src="asses/img/Billy.jpg" alt="Generic placeholder image">
                 </div>
             </div>
         </div>
@@ -483,14 +449,13 @@
         </div>
         
         <div id="section-5" class="container-fluid section-5">
-
             <div class=" hidden-xs regular-gallery row">
                 <div class="col-xs-9 col-xs-offset-0 quad-2">
                     <div class="row">
-                        <div class="col-xs-4 col-xs-offset-0 gallery-pics info info-img-2 img__media"><img id="gpic1" class="img-responsive" src="asses/img/i_Splice%201.png" alt="Generic placeholder image"><span class="glyphicon glyphicon-info-sign info-button white"></span>
+                        <div id="trouble" class="col-xs-4 col-xs-offset-0 gallery-pics info info-img-2 img__media"><img id="gpic1" class="img-responsive" src="asses/img/i_Splice%201.png" alt="Generic placeholder image"><span class="glyphicon glyphicon-info-sign info-button white fadeout"></span>
                             <div class="info__overlay">
                                 <h3 class="info__overlay__title">Heading</h3>
-                                <p  class="info__overlay__content">This is dummy text that will appear over the image</p>
+                                <p class="info__overlay__content">Lumbersexual farm-to-table wolf squid. Taxidermy migas sustainable, leggings selfies wayfarers Austin cardigan semiotics blog.</p>
                             </div>
                         </div>
                         <div class="col-xs-8 gallery-pics"><img id="gpic2" class="img-responsive" src="asses/img/i_Splice%202.png" alt="Generic placeholder image"></div>
@@ -585,5 +550,6 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/circles.js"></script>
+        <script src="js/slider.js"></script>
     </body>
 </html>
