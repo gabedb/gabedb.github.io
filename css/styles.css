@@ -35,8 +35,7 @@
 .carousel .next {left:0;opacity:1;z-index:1;}
 
 #carousel-example-generic img{
-    width: 65%;
-    height: auto;
+    width: 95%;
     border-radius: 20px;
 }
 
@@ -622,9 +621,9 @@ a.expand {
     position: relative;
 }
 
-.image span{
+.image-img-1 span{
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 80%;
 }
 

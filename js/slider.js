@@ -1,8 +1,8 @@
 var i, nIntervId;
 var textArray = 
-    ['"Do I want to be feared or loved? That’s a good question. I want both. I people to be afraid of how much they love me."',
-    '"Abraham Lincoln once said that \"If you\'re a racist, I will attack you with the North,\" and these are the principles I carry with me in the workplace."',
-     '"Toby has been cruisin\' for a bruisin\' for 12 years, and I am now his cruise director, and my name is Captain Bruisin\'. "'
+    ['"Praesent blandit est massa, a vestibulum eros aliquet auctor. Mauris in vestibulum magna. Sed vitae risus interdum, commodo nisi at, efficitur nibh."',
+    '"Quisque placerat ligula et ipsum euismod elementum. Phasellus consectetur iaculis leo, eu commodo tellus."',
+     '"Maecenas eget tortor ultricies, aliquet tellus vel, posuere elit. Fusce interdum placerat lectus, a semper lectus eleifend sit amet."'
     ]
 i=0;
  
